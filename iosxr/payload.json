@@ -1,0 +1,357 @@
+{
+    "Response": {
+      "@MajorVersion": "1", 
+      "@MinorVersion": "0", 
+      "Get": {
+        "Operational": {
+          "Controllers": {
+            "@MajorVersion": "2", 
+            "@MinorVersion": "0", 
+            "ControllerDescriptionTable": {
+              "Controller": [
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/0"
+                  }, 
+                  "Controller": "dwdm0/0/0/0", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/1"
+                  }, 
+                  "Controller": "dwdm0/0/0/1", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/10"
+                  }, 
+                  "Controller": "dwdm0/0/0/10", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/11"
+                  }, 
+                  "Controller": "dwdm0/0/0/11", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/12"
+                  }, 
+                  "Controller": "dwdm0/0/0/12", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/13"
+                  }, 
+                  "Controller": "dwdm0/0/0/13", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/14"
+                  }, 
+                  "Controller": "dwdm0/0/0/14", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/15"
+                  }, 
+                  "Controller": "dwdm0/0/0/15", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/16"
+                  }, 
+                  "Controller": "dwdm0/0/0/16", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/17"
+                  }, 
+                  "Controller": "dwdm0/0/0/17", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/18"
+                  }, 
+                  "Controller": "dwdm0/0/0/18", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/19"
+                  }, 
+                  "Controller": "dwdm0/0/0/19", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/2"
+                  }, 
+                  "Controller": "dwdm0/0/0/2", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/20"
+                  }, 
+                  "Controller": "dwdm0/0/0/20", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/21"
+                  }, 
+                  "Controller": "dwdm0/0/0/21", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/22"
+                  }, 
+                  "Controller": "dwdm0/0/0/22", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/23"
+                  }, 
+                  "Controller": "dwdm0/0/0/23", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/24"
+                  }, 
+                  "Controller": "dwdm0/0/0/24", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/25"
+                  }, 
+                  "Controller": "dwdm0/0/0/25", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/26"
+                  }, 
+                  "Controller": "dwdm0/0/0/26", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/27"
+                  }, 
+                  "Controller": "dwdm0/0/0/27", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/28"
+                  }, 
+                  "Controller": "dwdm0/0/0/28", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/29"
+                  }, 
+                  "Controller": "dwdm0/0/0/29", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/3"
+                  }, 
+                  "Controller": "dwdm0/0/0/3", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/30"
+                  }, 
+                  "Controller": "dwdm0/0/0/30", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/31"
+                  }, 
+                  "Controller": "dwdm0/0/0/31", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/32"
+                  }, 
+                  "Controller": "dwdm0/0/0/32", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/33"
+                  }, 
+                  "Controller": "dwdm0/0/0/33", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/34"
+                  }, 
+                  "Controller": "dwdm0/0/0/34", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/35"
+                  }, 
+                  "Controller": "dwdm0/0/0/35", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/36"
+                  }, 
+                  "Controller": "dwdm0/0/0/36", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/37"
+                  }, 
+                  "Controller": "dwdm0/0/0/37", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/38"
+                  }, 
+                  "Controller": "dwdm0/0/0/38", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/39"
+                  }, 
+                  "Controller": "dwdm0/0/0/39", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/4"
+                  }, 
+                  "Controller": "dwdm0/0/0/4", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/40"
+                  }, 
+                  "Controller": "dwdm0/0/0/40", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/41"
+                  }, 
+                  "Controller": "dwdm0/0/0/41", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/42"
+                  }, 
+                  "Controller": "dwdm0/0/0/42", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/43"
+                  }, 
+                  "Controller": "dwdm0/0/0/43", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/44"
+                  }, 
+                  "Controller": "dwdm0/0/0/44", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/45"
+                  }, 
+                  "Controller": "dwdm0/0/0/45", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/46"
+                  }, 
+                  "Controller": "dwdm0/0/0/46", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/47"
+                  }, 
+                  "Controller": "dwdm0/0/0/47", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/5"
+                  }, 
+                  "Controller": "dwdm0/0/0/5", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/6"
+                  }, 
+                  "Controller": "dwdm0/0/0/6", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/7"
+                  }, 
+                  "Controller": "dwdm0/0/0/7", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/8"
+                  }, 
+                  "Controller": "dwdm0/0/0/8", 
+                  "State": "IM_STATE_UP"
+                }, 
+                {
+                  "Naming": {
+                    "InterafceName": "dwdm0/0/0/9"
+                  }, 
+                  "Controller": "dwdm0/0/0/9", 
+                  "State": "IM_STATE_UP"
+                }
+              ]
+            }
+          }
+        }
+      }, 
+      "ResultSummary": {
+        "@ErrorCount": "0"
+      }
+    }
+  }
