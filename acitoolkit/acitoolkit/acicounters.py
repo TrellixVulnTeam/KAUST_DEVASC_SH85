@@ -511,15 +511,34 @@ class InterfaceStats(object):
                             for attrName in ['unclassifiedRate', 'unicastRate']:
                                 result[countName][granularity][period][attrName] = float(counterAttr[attrName])
                         elif countName in ['ingrStorm']:
-                            for attrName in ['dropBytesAvg', 'dropBytesCum', 'dropBytesMax', 'dropBytesMin',
-                                             'dropBytesPer']:
-                                result[countName][granularity][period][attrName] = int(counterAttr[attrName])
-                            for attrName in ['dropBytesRate', 'dropBytesRateAvg', 'dropBytesRateMax',
-                                             'dropBytesRateMin']:
-                                result[countName][granularity][period][attrName] = float(counterAttr[attrName])
+                            for attrName in ['DropBytesAvg', 'DropBytesCum', 'DropBytesMax', 'DropBytesMin',
+                                             'DropBytesPer']:
+                                try:
+                                    result[countName][granularity][period][attrName] = int(counterAttr[attrName])
+                                except:
+                                    tmpKey = ''
+                                    if (attrName=='DropBytesAvg'): tmpKey = 'dropBytesAvg'
+                                    if (attrName=='DropBytesCum'): tmpKey = 'dropBytesCum'
+                                    if (attrName=='DropBytesMax'): tmpKey = 'dropBytesMax'
+                                    if (attrName=='DropBytesMin'): tmpKey = 'dropBytesMin'
+                                    if (attrName=='DropBytesPer'): tmpKey = 'dropBytesPer'
+                                    result[countName][granularity][period][attrName] = int(counterAttr[tmpKey])
+                                    
+                            for attrName in ['DropBytesRate', 'DropBytesRateAvg', 'DropBytesRateMax',
+                                             'DropBytesRateMin']:
+                                try:
+                                    result[countName][granularity][period][attrName] = float(counterAttr[attrName])
+                                except:
+                                    if (attrName=='DropBytesAvg'): tmpKey = 'dropBytesAvg'
+                                    if (attrName=='DropBytesCum'): tmpKey = 'dropBytesCum'
+                                    if (attrName=='DropBytesMax'): tmpKey = 'dropBytesMax'
+                                    if (attrName=='DropBytesMin'): tmpKey = 'dropBytesMin'
+                                    if (attrName=='DropBytesPer'): tmpKey = 'dropBytesPer'
+                                    result[countName][granularity][period][attrName] = float(counterAttr[tmpKey])
                         else:
-                            print('Found unsupported counter ' + str(countName) + " " +
-                                  str(granularity) + " " + str(period))
+                            b = 1
+                            # print('Found unsupported counter ' + str(countName) + " " +
+                            #       str(granularity) + " " + str(period))
                         result[countName][granularity][period]['intervalEnd'] = counterAttr.get('repIntvEnd')
                         result[countName][granularity][period]['intervalStart'] = counterAttr.get('repIntvStart')
 
