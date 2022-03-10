@@ -1,5 +1,6 @@
 import argparse
 import json
+from py import process
 import yaml
 
 
@@ -14,13 +15,11 @@ def processFile(jsonFile):
             controllerName = c['Controller']
             state = c['State']
             contents += f'{device}\t{segment}\t{controllerName}\t{state}\n'
+            print(f'{device}\t{segment}\t{controllerName}\t{state}\n')
     #save the file
     with open("parsedContent.txt", "w") as f:
         f.write(contents)
 
-
-
-        
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

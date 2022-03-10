@@ -1,0 +1,261 @@
+############################################################################
+#################### Parse API Data Formats with Python #################### 
+############################################################################
+
+********************************************
+****************** Task 1 ****************** 
+********************************************
+** Step 5 **
+if __name__ == "__main__":
+    #########################################
+    #              Procedure 1              #
+    #########################################
+    # Add print statement here
+    print('DevNet')
+
+** Step 8 **
+pwd
+
+** Step 9 **
+pipenv run python lab01.py
+
+** Step 10 **
+pipenv --venv
+
+** Step 16 **
+{
+    "python.pythonPath": "/home/student/.local/share/virtualenvs/student-32m93jd"
+}
+
+********************************************
+****************** Task 2 ****************** 
+********************************************
+** Step 2 **
+    #########################################
+    #              Procedure 2              #
+    #########################################
+    print('##################')
+    print('###### YAML ######')
+    print('##################')
+
+    # Open the user.yaml file as read only
+
+** Step 3 **
+pipenv install ruamel.yaml 
+
+** Step 4 **
+# Import modules
+import sys
+from helper import *
+from ruamel import yaml
+
+** Step 6 **
+# Open the user.yaml file as read only
+with open('user.yaml', 'r') as stream:
+
+** Step 7 **
+# Load the stream using safe_load
+user_yaml = yaml.safe_load(stream)
+
+** Step 8 **
+# Print the object type
+print("Type of user_yaml variable:")
+print(type(user_yaml))
+
+** Step 11 **
+# Iterate over the keys of the user_yaml and print them
+print('Keys in user_yaml:')
+for key in user_yaml:
+    print(key)
+
+** Step 13 **
+# Create a new instance of class User
+user = User()
+
+** Step 14 **
+# Assign values from the user_yaml to the object user
+user.id = user_yaml['id']
+user.first_name = user_yaml['first_name']
+user.last_name = user_yaml['last_name']
+user.birth_date = user_yaml['birth_date']
+user.address = user_yaml['address']
+user.score = user_yaml['score']
+
+** Step 15 **
+# Print the user object
+print('User object:')
+print(user)
+
+********************************************
+****************** Task 3 ****************** 
+********************************************
+** Step 1 **
+# Import modules
+import sys
+from helper import *
+from ruamel import yaml
+import json
+
+** Step 2 **
+# Create JSON structure from the user object
+user_json = json.dumps(user, default = serializeUser)
+
+** Step 3 **
+# Print the created JSON structure
+print('Print user_json:')
+print(user_json)
+
+** Step 6 **
+# Create JSON structure with indents and sorted keys
+print('JSON with indents and sorted keys')
+user_json = json.dumps(user, default = serializeUser, indent=4, sort_keys=True)
+print(user_json)
+
+********************************************
+****************** Task 4 ****************** 
+********************************************
+** Step 2 **
+import xml.etree.ElementTree as ET
+
+** Step 3 **
+#########################################
+#              Procedure 4              #
+#########################################
+print('######################')
+print('# XML - Element Tree #')
+print('######################')
+
+# Parse the user.xml file
+tree = ET.parse('user.xml')
+
+** Step 4 **
+# Get the root element
+root = tree.getroot()
+
+** Step 5 **
+# Print the tags
+print('Tags in the XML:')    
+for element in root:
+    print(element.tag)
+
+** Step 7 **
+# Print the value of id tag
+print('id tag value:')
+print(root.find('id').text)
+
+** Step 9 **
+# Find all elements with the tag address in root
+addresses = root.findall('address')
+
+** Step 10 **
+# Print the addresses in the xml
+print('Addresses:')
+for address in addresses:
+    for i in address:   
+        print(i.tag + ':' + i.text)
+
+** Step 12 **
+# Print the elements in root with their tags and values
+print('Print the structure')    
+for k in root.iter():   
+    print(k.tag + ':' + k.text)
+
+** Step 14 **
+import xml.dom.minidom as MD
+
+** Step 15 **
+# Parse the user.xml file
+dom = MD.parse('user.xml')
+
+** Step 16 **
+# Print the tags
+print('Tags in the XML:')
+for node in dom.childNodes:
+    printTags(node.childNodes)
+
+** Step 18 **
+# Accessing element value
+print('Accessing element value')
+idElements = dom.getElementsByTagName('id')
+print (idElements)
+
+** Step 20 **
+# Accessing element value
+print('Accessing element value')
+idElements = dom.getElementsByTagName('id')
+print (idElements)
+elementId = idElements.item(0)
+
+** Step 21 **
+print(elementId.childNodes)
+
+** Step 23 **
+idValue = elementId.firstChild.data
+
+** Step 24 **
+print(idValue)
+
+** Step 26 **
+# Print elements from the DOM with tag name 'address'
+print('Addresses:')
+for node in dom.getElementsByTagName('address'):
+    printNodes(node.childNodes)
+
+** Step 28 **
+# Print the entire structure with printNodes
+print('The structure:')
+for node in dom.childNodes:
+    printNodes(node.childNodes)
+
+********************************************
+****************** Task 5 ****************** 
+********************************************
+** Step 1 **
+<?xml version="1.0"?>
+<item>
+    <a:table xmlns:a="https://www.example.com/network">
+        <a:tr>
+            <a:td>Router</a:td>
+            <a:td>Switch</a:td>
+        </a:tr>
+    </a:table>
+    <b:table xmlns:b="https://www.example.com/furniture">
+        <b:name>Coffee Table</b:name>
+        <b:length>180</b:length>
+        <b:width>80</b:width>
+    </b:table>
+</item>
+
+** Step 2 **
+print('######################')
+print('#   Use Namespaces   #')
+print('######################')
+
+# Parse the user.xml file
+itemTree = ET.parse('item.xml')
+
+** Step 3 **
+# Get the root element
+root = itemTree.getroot()
+
+** Step 4 **
+# Define namespaces 
+namespaces = {'a':'https://www.example.com/network', 'b':'https://www.example.com/furniture'}
+
+** Step 5 **
+# Set table as the root element 
+elementsInNSa = root.findall('a:table', namespaces)
+elementsInNSb = root.findall('b:table', namespaces)
+
+** Step 6 **
+# Elements in NS a
+print('Elements in NS a:')   
+for e in elementsInNSa:
+    for i in e.iter():   
+        print(i.tag + ':' + i.text)
+
+** Step 8 **
+# Elements in NS b
+print('Elements in NS b:')   
+for element in list(elementsInNSb[0]):
+    print(element.tag + ':' + element.text)
