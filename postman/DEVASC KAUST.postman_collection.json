@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "431ccbdd-37b0-4058-a5f7-1ac3a4a6fccb",
+		"name": "DEVASC KAUST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cisco IOS-XE Get Interface",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Cisco IOS-XE Update Interface",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Cisco NSO - Get pe-xr TenGiGe interface",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Cisco NSO - Set pe-xr TenGiGe interface",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "NX RESTCONF example",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin_1234!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang.data+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://sandbox-nxos-1.cisco.com/restconf/data/Cisco-NX-OS-device:System/intf-items/phys-items",
+					"protocol": "http",
+					"host": [
+						"sandbox-nxos-1",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"Cisco-NX-OS-device:System",
+						"intf-items",
+						"phys-items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NX-API CLI - XML request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Admin_1234!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\"?>\r\n<ins_api>\r\n  <version>1.0</version>\r\n  <type>cli_show</type>\r\n  <chunk>0</chunk>\r\n  <sid>sid</sid>\r\n  <input>show interface brief</input>\r\n  <output_format>xml</output_format>\r\n</ins_api>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sandbox-nxos-1.cisco.com/ins",
+					"protocol": "https",
+					"host": [
+						"sandbox-nxos-1",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"ins"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
