@@ -1,5 +1,5 @@
-# KAUST_DEVASC
-This repository contains code from the KAUST DEVASC Training course on 2012-12-02 / 2022-03-10.
+# DEVASC Course for KAUST
+This repository contains code from the KAUST DEVASC Training courses on 2012-12-02 / 2022-03-10.
 
 It includes:
 - a sample of the repository
