@@ -1,4 +1,5 @@
 # This will be a working python script someday
+<<<<<<< HEAD
 def normalize_number(
     num: int, rmin: int, rmax: int, tmin: int, tmax: int) -> int:
     """
@@ -31,3 +32,7 @@ def normalize_number(
 
 result = normalize_number(600, 1, 4096, 200, 255)
 print(result)
+=======
+print('Test')
+print('Another line is there.')
+>>>>>>> 866e6e1bf001b227c78c267b367651a7368e8dcb
